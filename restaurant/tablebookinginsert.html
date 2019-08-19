@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+{
+    box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 15px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=text] 
+    {
+    width: 95%;
+    padding: 14px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border-radius: 10px;
+    background: #F0F0F4;
+}
+
+input[type=text]:focus, input[type=text]:focus {
+    background: white; 
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+    background-color: mediumorchid;
+    color: white;
+    padding: 15px 21px;
+    margin: 8px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 25%;
+    opacity: 0.5;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+a {
+    color: mediumseagreen;
+}
+
+.signin {
+    background-color: #ffffff; 
+    text-align: center;
+}
+</style>
+</head>
+
+<form ACTION="tablebookinginsert.php"METHOD="POST">
+  <div class="container">
+    <center><h1 style="color:#B22222" size="45";>GIVE APPROPRIATE DETAILS</h1></center>
+    <hr>
+      
+      <label for="TABLE_ID"><b>TABLE_ID</b></label>
+    <input type="text" placeholder="Enter TABLE_ID" name="TABLE_ID" required>
+
+    <label for="MGR_ID"><b>MGR_ID</b></label>
+    <input type="text" placeholder="Enter MGR_ID" name="MGR_ID" required>
+      
+       <label for="TABLE_CAPACITY"><b>TABLE CAPACITY</b></label>
+    <input type="text" placeholder="Enter TABLE_CAPACITY" name="TABLE_CAPACITY" required>
+      
+      <button type="update" class="registerbtn">UPDATE</button>
+    <button type="reset" class="registerbtn">RESET</button>
+  </div>
+</form>
+<p style="font-family: Black And White Picture"><a href="main.html"><font style="color:black">GO BACK</font></a></p>
+</body>
+</html>
+

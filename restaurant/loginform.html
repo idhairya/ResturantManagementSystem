@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RESTAURANT DATABASE</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	</head>
+    
+	<style>
+		body {
+background: url("wallpaper.wiki-Download-Images-Food-HD-PIC-WPD006571.jpg") no-repeat;
+		background-size:cover;
+		font-family:"Permanent Marker";
+		text-color:white;
+    }
+	input[type="submit"]
+{
+	background-color:maroon;
+    color: white;
+    padding: 14px 18px;
+    margin: 6px 16px 16px 40px;
+    border-radius: 18px;
+    cursor: pointer;
+    width: 10%;
+    opacity: 0.8;
+    align-content: center;
+    font-family: "verdana";
+    font-weight: bold
+}
+input[type="reset"]{
+    background-color:maroon;
+    color: white;
+    padding: 14px 18px;
+    margin: 6px 16px 16px 40px;
+    border-radius: 18px;
+    cursor: pointer;
+    width: 10%;
+    opacity: 0.8;
+    align-content: center;
+    font-family: "verdana";
+    font-weight: bold
+}
+</style>
+    
+    
+	<body>
+        
+	<div id = "text">
+	<br><br><b><marquee direction="centre" style="font-family:Permanent Marker; font-size:40pt ;color: #000000" scrollamount="15"> WELCOME TO MY DATABASE! </marquee></b>
+	</div>
+        
+		<div id = "log">
+			<form  id = "logform" method="POST" action="main.html">
+                
+				USERNAME: &nbsp;&nbsp;<input type = "text" name="id" pattern="[A-Za-z0-9]{4,}" title="four or more characters and no special characters are allowed" placeholder="name" required><br><br>
+                
+				Password&nbsp;&nbsp;   : &nbsp;&nbsp;<input type="password" name="pass" placeholder="Password" required><br><br>
+                
+				<input type="submit" value="Login">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type = "reset" value = "Clear">
+                
+			</form>
+		</div>
+	</body>
+</html>
